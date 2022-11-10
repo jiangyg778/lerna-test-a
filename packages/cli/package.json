@@ -1,0 +1,31 @@
+{
+  "name": "@jyg/lerna-test-c",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "jiangyaguang",
+  "homepage": "",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "module": "dist/cli.module.js",
+  "bin": {
+    "lerna-test-cli": "bin/cli.mjs"
+  },
+  "directories": {
+    "lib": "dist",
+    "test": "__tests__"
+  },
+  "files": [
+    "bin",
+    "dist"
+  ],
+  "scripts": {
+    "test": "node ./__tests__/cli.test.js"
+  },
+  "dependencies": {
+    "yargs": "^17.6.2"
+  },
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  }
+}
